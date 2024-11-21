@@ -5,7 +5,7 @@ import numpy as np
 import skfuzzy as fuzz
 from skfuzzy import control as ctrl
 
-class Group12Controller(KesslerController):
+class Group15Controller(KesslerController):
     def __init__(self):
         super().__init__()
 
@@ -112,4 +112,4 @@ class Group12Controller(KesslerController):
 
     @property
     def name(self) -> str:
-        return "Group 12 Controller"
+        return "Group 15 Controller"

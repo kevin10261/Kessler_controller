@@ -5,7 +5,7 @@ import time
 from kesslergame import Scenario, KesslerGame, GraphicsType
 from test_controller import TestController
 from scott_dick_controller import ScottDickController
-from group12_controller import Group12Controller
+from group15_controller import Group15Controller
 from graphics_both import GraphicsBoth
 
 my_test_scenario = Scenario(
@@ -34,7 +34,7 @@ game = KesslerGame(settings=game_settings)  # Use this to visualize the game sce
 pre = time.perf_counter()
 score, perf_data = game.run(
     scenario=my_test_scenario,
-    controllers=[Group12Controller(), ScottDickController()]
+    controllers=[Group15Controller(), ScottDickController()]
 )
 
 print('Scenario eval time: ' + str(time.perf_counter() - pre))
