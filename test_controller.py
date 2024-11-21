@@ -5,16 +5,16 @@
 
 from kesslergame import KesslerController
 from typing import Dict, Tuple
-import skfuzzy as fuzz
+
 
 class TestController(KesslerController):
     def __init__(self):
         """
         Any variables or initialization desired for the controller can be set up here
         """
-        self.eval_frames = 0
+        ...
 
-    def actions(self, ship_state: Dict, game_state: Dict) -> Tuple[float, float, bool]:
+    def actions(self, ship_state: Dict, game_state: Dict) -> Tuple[float, float, bool, bool]:
         """
         Method processed each time step by this controller to determine what control actions to take
 
@@ -29,13 +29,12 @@ class TestController(KesslerController):
             bool: mine deployment control value. Lays mine if true
         """
 
-        thrust = 0
-        turn_rate = 90
+        thrust = 50
+        turn_rate = -90
         fire = True
-        self.eval_frames +=1
-        drop_mine = True
+        drop_mine = False
 
-        return thrust, turn_rate, fire , drop_mine
+        return thrust, turn_rate, fire, drop_mine
 
     @property
     def name(self) -> str:
