@@ -1,3 +1,5 @@
+NOTICE THIS CODE DOES NOT BELONG TO ME IT BELONGS TO Professor Scott Dick , and https://github.com/ThalesGroup/kessler-game/tree/main (ThalesGroup)
+
 # Kessler_controller
 Major four tasks to work on:  thrust, turn_rate, fire and drop_mine control outputs using a fuzzy controller
 
